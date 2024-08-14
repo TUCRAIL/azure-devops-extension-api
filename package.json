@@ -1,10 +1,10 @@
 {
-  "name": "azure-devops-extension-api",
-  "version": "4.241.1",
+  "name": "@tucrail/azure-devops-extension-api",
+  "version": "4.241.2",
   "description": "REST client libraries and contracts for Azure DevOps web extension developers.",
   "repository": {
     "type": "git",
-    "url": "https://github.com/TUCRAIL/azure-devops-extension-api.git"
+    "url": "git+https://github.com/TUCRAIL/azure-devops-extension-api.git"
   },
   "scripts": {
     "build": "node buildpackage.js"
@@ -33,5 +33,7 @@
     "shelljs": "~0.8.5",
     "typescript": "^2.9.2",
     "uglify-es": "~3.1.3"
-  }
+  },
+  "types": "./index.d.ts",
+  "main": "index.js"
 }
