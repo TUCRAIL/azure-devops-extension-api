@@ -1,5 +1,5 @@
 {
-  "name": "@tucrail/azure-devops-extension-api",
+  "name": "azure-devops-extension-api",
   "version": "4.241.1",
   "description": "REST client libraries and contracts for Azure DevOps web extension developers.",
   "repository": {
