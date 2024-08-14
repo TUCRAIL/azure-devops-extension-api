@@ -22,7 +22,7 @@ export class ReportingRestClient extends RestClientBase {
         ): Promise<Reporting.OrgAlertSummary> {
 
         return this.beginRequest<Reporting.OrgAlertSummary>({
-            apiVersion: "7.2-preview.1",
+            apiVersion: "5.1",
             routeTemplate: "_apis/Reporting/summary/{action}",
             routeValues: {
                 action: "Alerts"
@@ -36,7 +36,7 @@ export class ReportingRestClient extends RestClientBase {
         ): Promise<Reporting.OrgEnablementSummary> {
 
         return this.beginRequest<Reporting.OrgEnablementSummary>({
-            apiVersion: "7.2-preview.1",
+            apiVersion: "5.1",
             routeTemplate: "_apis/Reporting/summary/{action}",
             routeValues: {
                 action: "Enablement"

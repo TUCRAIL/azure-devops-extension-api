@@ -1,10 +1,10 @@
 {
-  "name": "azure-devops-extension-api",
+  "name": "@tucrail/azure-devops-extension-api",
   "version": "4.241.1",
   "description": "REST client libraries and contracts for Azure DevOps web extension developers.",
   "repository": {
     "type": "git",
-    "url": "https://github.com/Microsoft/azure-devops-extension-api.git"
+    "url": "https://github.com/TUCRAIL/azure-devops-extension-api.git"
   },
   "scripts": {
     "build": "node buildpackage.js"
@@ -17,9 +17,9 @@
   "author": "Microsoft",
   "license": "MIT",
   "bugs": {
-    "url": "https://aka.ms/AAk5pcm"
+    "url": "https://github.com/TUCRAIL/azure-devops-extension-api/issues"
   },
-  "homepage": "https://docs.microsoft.com/en-us/azure/devops/integrate",
+  "homepage": "https://github.com/TUCRAIL/azure-devops-extension-api",
   "dependencies": {
     "whatwg-fetch": "~3.0.0"
   },

@@ -35,7 +35,7 @@ export class LocationsRestClient extends RestClientBase {
         };
 
         return this.beginRequest<Locations.ConnectionData>({
-            apiVersion: "7.2-preview.1",
+            apiVersion: "5.1",
             routeTemplate: "_apis/ConnectionData",
             queryParams: queryValues
         });
@@ -61,7 +61,7 @@ export class LocationsRestClient extends RestClientBase {
         };
 
         return this.beginRequest<Locations.ResourceAreaInfo>({
-            apiVersion: "7.2-preview.1",
+            apiVersion: "5.1",
             routeTemplate: "_apis/ResourceAreas/{areaId}",
             routeValues: {
                 areaId: areaId
@@ -87,7 +87,7 @@ export class LocationsRestClient extends RestClientBase {
         };
 
         return this.beginRequest<Locations.ResourceAreaInfo>({
-            apiVersion: "7.2-preview.1",
+            apiVersion: "5.1",
             routeTemplate: "_apis/ResourceAreas/{areaId}",
             routeValues: {
                 areaId: areaId
@@ -111,7 +111,7 @@ export class LocationsRestClient extends RestClientBase {
         };
 
         return this.beginRequest<Locations.ResourceAreaInfo[]>({
-            apiVersion: "7.2-preview.1",
+            apiVersion: "5.1",
             routeTemplate: "_apis/ResourceAreas/{areaId}",
             queryParams: queryValues
         });
@@ -129,7 +129,7 @@ export class LocationsRestClient extends RestClientBase {
         };
 
         return this.beginRequest<Locations.ResourceAreaInfo[]>({
-            apiVersion: "7.2-preview.1",
+            apiVersion: "5.1",
             routeTemplate: "_apis/ResourceAreas/{areaId}",
             queryParams: queryValues
         });
@@ -145,7 +145,7 @@ export class LocationsRestClient extends RestClientBase {
         ): Promise<void> {
 
         return this.beginRequest<void>({
-            apiVersion: "7.2-preview.1",
+            apiVersion: "5.1",
             method: "DELETE",
             routeTemplate: "_apis/ServiceDefinitions/{serviceType}/{identifier}",
             routeValues: {
@@ -176,7 +176,7 @@ export class LocationsRestClient extends RestClientBase {
         };
 
         return this.beginRequest<Locations.ServiceDefinition>({
-            apiVersion: "7.2-preview.1",
+            apiVersion: "5.1",
             routeTemplate: "_apis/ServiceDefinitions/{serviceType}/{identifier}",
             routeValues: {
                 serviceType: serviceType,
@@ -194,7 +194,7 @@ export class LocationsRestClient extends RestClientBase {
         ): Promise<Locations.ServiceDefinition[]> {
 
         return this.beginRequest<Locations.ServiceDefinition[]>({
-            apiVersion: "7.2-preview.1",
+            apiVersion: "5.1",
             routeTemplate: "_apis/ServiceDefinitions/{serviceType}/{identifier}",
             routeValues: {
                 serviceType: serviceType
@@ -210,7 +210,7 @@ export class LocationsRestClient extends RestClientBase {
         ): Promise<void> {
 
         return this.beginRequest<void>({
-            apiVersion: "7.2-preview.1",
+            apiVersion: "5.1",
             method: "PATCH",
             routeTemplate: "_apis/ServiceDefinitions/{serviceType}/{identifier}",
             body: serviceDefinitions

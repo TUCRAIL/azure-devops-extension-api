@@ -26,7 +26,7 @@ export class ServiceEndpointRestClient extends RestClientBase {
         ): Promise<ServiceEndpoint.AzureManagementGroupQueryResult> {
 
         return this.beginRequest<ServiceEndpoint.AzureManagementGroupQueryResult>({
-            apiVersion: "7.2-preview.1",
+            apiVersion: "5.1",
             routeTemplate: "_apis/serviceendpoint/endpointproxy/azurermmanagementgroups"
         });
     }
@@ -39,7 +39,7 @@ export class ServiceEndpointRestClient extends RestClientBase {
         ): Promise<ServiceEndpoint.AzureSubscriptionQueryResult> {
 
         return this.beginRequest<ServiceEndpoint.AzureSubscriptionQueryResult>({
-            apiVersion: "7.2-preview.1",
+            apiVersion: "5.1",
             routeTemplate: "_apis/serviceendpoint/endpointproxy/azurermsubscriptions"
         });
     }
@@ -62,7 +62,7 @@ export class ServiceEndpointRestClient extends RestClientBase {
         };
 
         return this.beginRequest<ServiceEndpoint.ServiceEndpointRequestResult>({
-            apiVersion: "7.2-preview.1",
+            apiVersion: "5.1",
             method: "POST",
             routeTemplate: "{project}/_apis/serviceendpoint/endpointproxy",
             routeValues: {
@@ -85,7 +85,7 @@ export class ServiceEndpointRestClient extends RestClientBase {
         ): Promise<string[]> {
 
         return this.beginRequest<string[]>({
-            apiVersion: "7.2-preview.1",
+            apiVersion: "5.1",
             method: "POST",
             routeTemplate: "{project}/_apis/serviceendpoint/endpointproxy",
             routeValues: {
@@ -105,7 +105,7 @@ export class ServiceEndpointRestClient extends RestClientBase {
         ): Promise<ServiceEndpoint.ServiceEndpoint> {
 
         return this.beginRequest<ServiceEndpoint.ServiceEndpoint>({
-            apiVersion: "7.2-preview.4",
+            apiVersion: "5.1",
             method: "POST",
             routeTemplate: "_apis/serviceendpoint/endpoints/{endpointId}",
             body: endpoint
@@ -131,7 +131,7 @@ export class ServiceEndpointRestClient extends RestClientBase {
         };
 
         return this.beginRequest<void>({
-            apiVersion: "7.2-preview.4",
+            apiVersion: "5.1",
             method: "DELETE",
             routeTemplate: "_apis/serviceendpoint/endpoints/{endpointId}",
             routeValues: {
@@ -153,7 +153,7 @@ export class ServiceEndpointRestClient extends RestClientBase {
         ): Promise<void> {
 
         return this.beginRequest<void>({
-            apiVersion: "7.2-preview.4",
+            apiVersion: "5.1",
             method: "PATCH",
             routeTemplate: "_apis/serviceendpoint/endpoints/{endpointId}",
             routeValues: {
@@ -181,7 +181,7 @@ export class ServiceEndpointRestClient extends RestClientBase {
         };
 
         return this.beginRequest<ServiceEndpoint.ServiceEndpoint>({
-            apiVersion: "7.2-preview.4",
+            apiVersion: "5.1",
             method: "PUT",
             routeTemplate: "_apis/serviceendpoint/endpoints/{endpointId}",
             routeValues: {
@@ -202,7 +202,7 @@ export class ServiceEndpointRestClient extends RestClientBase {
         ): Promise<ServiceEndpoint.ServiceEndpoint[]> {
 
         return this.beginRequest<ServiceEndpoint.ServiceEndpoint[]>({
-            apiVersion: "7.2-preview.4",
+            apiVersion: "5.1",
             method: "PUT",
             routeTemplate: "_apis/serviceendpoint/endpoints/{endpointId}",
             body: endpoints
@@ -230,7 +230,7 @@ export class ServiceEndpointRestClient extends RestClientBase {
         };
 
         return this.beginRequest<ServiceEndpoint.ServiceEndpoint>({
-            apiVersion: "7.2-preview.4",
+            apiVersion: "5.1",
             routeTemplate: "{project}/_apis/serviceendpoint/endpoints/{endpointId}",
             routeValues: {
                 project: project,
@@ -274,7 +274,7 @@ export class ServiceEndpointRestClient extends RestClientBase {
         };
 
         return this.beginRequest<ServiceEndpoint.ServiceEndpoint[]>({
-            apiVersion: "7.2-preview.4",
+            apiVersion: "5.1",
             routeTemplate: "{project}/_apis/serviceendpoint/endpoints/{endpointId}",
             routeValues: {
                 project: project
@@ -314,7 +314,7 @@ export class ServiceEndpointRestClient extends RestClientBase {
         };
 
         return this.beginRequest<ServiceEndpoint.ServiceEndpoint[]>({
-            apiVersion: "7.2-preview.4",
+            apiVersion: "5.1",
             routeTemplate: "{project}/_apis/serviceendpoint/endpoints/{endpointId}",
             routeValues: {
                 project: project
@@ -341,7 +341,7 @@ export class ServiceEndpointRestClient extends RestClientBase {
         };
 
         return this.beginRequest<ServiceEndpoint.ServiceEndpoint[]>({
-            apiVersion: "7.2-preview.4",
+            apiVersion: "5.1",
             method: "POST",
             routeTemplate: "{project}/_apis/serviceendpoint/endpoints/{endpointId}",
             routeValues: {
@@ -373,7 +373,7 @@ export class ServiceEndpointRestClient extends RestClientBase {
         };
 
         return this.beginRequest<Response>({
-            apiVersion: "7.2-preview.1",
+            apiVersion: "5.1",
             routeTemplate: "{project}/_apis/serviceendpoint/{endpointId}/executionhistory",
             routeValues: {
                 project: project,
@@ -400,7 +400,7 @@ export class ServiceEndpointRestClient extends RestClientBase {
         ): Promise<ServiceEndpoint.ServiceEndpointExecutionRecord[]> {
 
         return this.beginRequest<ServiceEndpoint.ServiceEndpointExecutionRecord[]>({
-            apiVersion: "7.2-preview.1",
+            apiVersion: "5.1",
             method: "POST",
             routeTemplate: "{project}/_apis/serviceendpoint/executionhistory",
             routeValues: {
@@ -418,7 +418,7 @@ export class ServiceEndpointRestClient extends RestClientBase {
         ): Promise<ServiceEndpoint.OAuthConfiguration> {
 
         return this.beginRequest<ServiceEndpoint.OAuthConfiguration>({
-            apiVersion: "7.2-preview.1",
+            apiVersion: "5.1",
             method: "POST",
             routeTemplate: "_apis/serviceendpoint/oauthconfiguration/{configurationId}",
             body: configurationParams
@@ -433,7 +433,7 @@ export class ServiceEndpointRestClient extends RestClientBase {
         ): Promise<ServiceEndpoint.OAuthConfiguration> {
 
         return this.beginRequest<ServiceEndpoint.OAuthConfiguration>({
-            apiVersion: "7.2-preview.1",
+            apiVersion: "5.1",
             method: "DELETE",
             routeTemplate: "_apis/serviceendpoint/oauthconfiguration/{configurationId}",
             routeValues: {
@@ -450,7 +450,7 @@ export class ServiceEndpointRestClient extends RestClientBase {
         ): Promise<ServiceEndpoint.OAuthConfiguration> {
 
         return this.beginRequest<ServiceEndpoint.OAuthConfiguration>({
-            apiVersion: "7.2-preview.1",
+            apiVersion: "5.1",
             routeTemplate: "_apis/serviceendpoint/oauthconfiguration/{configurationId}",
             routeValues: {
                 configurationId: configurationId
@@ -473,7 +473,7 @@ export class ServiceEndpointRestClient extends RestClientBase {
         };
 
         return this.beginRequest<ServiceEndpoint.OAuthConfiguration[]>({
-            apiVersion: "7.2-preview.1",
+            apiVersion: "5.1",
             routeTemplate: "_apis/serviceendpoint/oauthconfiguration/{configurationId}",
             queryParams: queryValues
         });
@@ -489,7 +489,7 @@ export class ServiceEndpointRestClient extends RestClientBase {
         ): Promise<ServiceEndpoint.OAuthConfiguration> {
 
         return this.beginRequest<ServiceEndpoint.OAuthConfiguration>({
-            apiVersion: "7.2-preview.1",
+            apiVersion: "5.1",
             method: "PUT",
             routeTemplate: "_apis/serviceendpoint/oauthconfiguration/{configurationId}",
             routeValues: {
@@ -513,7 +513,7 @@ export class ServiceEndpointRestClient extends RestClientBase {
         };
 
         return this.beginRequest<ServiceEndpoint.ProjectReference[]>({
-            apiVersion: "7.2-preview.1",
+            apiVersion: "5.1",
             routeTemplate: "_apis/serviceendpoint/share/{endpointId}",
             routeValues: {
                 endpointId: endpointId
@@ -539,7 +539,7 @@ export class ServiceEndpointRestClient extends RestClientBase {
         };
 
         return this.beginRequest<void>({
-            apiVersion: "7.2-preview.1",
+            apiVersion: "5.1",
             method: "POST",
             routeTemplate: "_apis/serviceendpoint/share/{endpointId}",
             routeValues: {
@@ -566,7 +566,7 @@ export class ServiceEndpointRestClient extends RestClientBase {
         };
 
         return this.beginRequest<ServiceEndpoint.ServiceEndpointType[]>({
-            apiVersion: "7.2-preview.1",
+            apiVersion: "5.1",
             routeTemplate: "_apis/serviceendpoint/types",
             queryParams: queryValues
         });
@@ -596,7 +596,7 @@ export class ServiceEndpointRestClient extends RestClientBase {
         };
 
         return this.beginRequest<string>({
-            apiVersion: "7.2-preview.1",
+            apiVersion: "5.1",
             method: "POST",
             routeTemplate: "_apis/serviceendpoint/vstsaadoauth/vstsaadoauth",
             queryParams: queryValues
@@ -609,7 +609,7 @@ export class ServiceEndpointRestClient extends RestClientBase {
         ): Promise<string> {
 
         return this.beginRequest<string>({
-            apiVersion: "7.2-preview.1",
+            apiVersion: "5.1",
             routeTemplate: "_apis/serviceendpoint/vstsaadoauth/vstsaadoauth"
         });
     }

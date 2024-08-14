@@ -28,7 +28,7 @@ export class TestPlanRestClient extends RestClientBase {
         ): Promise<TestPlan.TestConfiguration> {
 
         return this.beginRequest<TestPlan.TestConfiguration>({
-            apiVersion: "7.2-preview.1",
+            apiVersion: "5.1",
             method: "POST",
             routeTemplate: "{project}/_apis/testplan/Configurations/{testConfigurationId}",
             routeValues: {
@@ -54,7 +54,7 @@ export class TestPlanRestClient extends RestClientBase {
         };
 
         return this.beginRequest<void>({
-            apiVersion: "7.2-preview.1",
+            apiVersion: "5.1",
             method: "DELETE",
             routeTemplate: "{project}/_apis/testplan/Configurations/{testConfigurationId}",
             routeValues: {
@@ -76,7 +76,7 @@ export class TestPlanRestClient extends RestClientBase {
         ): Promise<TestPlan.TestConfiguration> {
 
         return this.beginRequest<TestPlan.TestConfiguration>({
-            apiVersion: "7.2-preview.1",
+            apiVersion: "5.1",
             routeTemplate: "{project}/_apis/testplan/Configurations/{testConfigurationId}",
             routeValues: {
                 project: project,
@@ -101,7 +101,7 @@ export class TestPlanRestClient extends RestClientBase {
         };
 
         return this.beginRequest<Response>({
-            apiVersion: "7.2-preview.1",
+            apiVersion: "5.1",
             routeTemplate: "{project}/_apis/testplan/Configurations/{testConfigurationId}",
             routeValues: {
                 project: project
@@ -133,7 +133,7 @@ export class TestPlanRestClient extends RestClientBase {
         };
 
         return this.beginRequest<TestPlan.TestConfiguration>({
-            apiVersion: "7.2-preview.1",
+            apiVersion: "5.1",
             method: "PATCH",
             routeTemplate: "{project}/_apis/testplan/Configurations/{testConfigurationId}",
             routeValues: {
@@ -175,7 +175,7 @@ export class TestPlanRestClient extends RestClientBase {
         };
 
         return this.beginRequest<TestPlan.TestEntityCount[]>({
-            apiVersion: "7.2-preview.1",
+            apiVersion: "5.1",
             routeTemplate: "{project}/_apis/testplan/Count/{planId}",
             routeValues: {
                 project: project,
@@ -197,7 +197,7 @@ export class TestPlanRestClient extends RestClientBase {
         ): Promise<TestPlan.TestPlan> {
 
         return this.beginRequest<TestPlan.TestPlan>({
-            apiVersion: "7.2-preview.1",
+            apiVersion: "5.1",
             method: "POST",
             routeTemplate: "{project}/_apis/testplan/Plans/{planId}",
             routeValues: {
@@ -219,7 +219,7 @@ export class TestPlanRestClient extends RestClientBase {
         ): Promise<void> {
 
         return this.beginRequest<void>({
-            apiVersion: "7.2-preview.1",
+            apiVersion: "5.1",
             method: "DELETE",
             routeTemplate: "{project}/_apis/testplan/Plans/{planId}",
             routeValues: {
@@ -241,7 +241,7 @@ export class TestPlanRestClient extends RestClientBase {
         ): Promise<TestPlan.TestPlan> {
 
         return this.beginRequest<TestPlan.TestPlan>({
-            apiVersion: "7.2-preview.1",
+            apiVersion: "5.1",
             routeTemplate: "{project}/_apis/testplan/Plans/{planId}",
             routeValues: {
                 project: project,
@@ -275,7 +275,7 @@ export class TestPlanRestClient extends RestClientBase {
         };
 
         return this.beginRequest<Response>({
-            apiVersion: "7.2-preview.1",
+            apiVersion: "5.1",
             routeTemplate: "{project}/_apis/testplan/Plans/{planId}",
             routeValues: {
                 project: project
@@ -303,7 +303,7 @@ export class TestPlanRestClient extends RestClientBase {
         ): Promise<TestPlan.TestPlan> {
 
         return this.beginRequest<TestPlan.TestPlan>({
-            apiVersion: "7.2-preview.1",
+            apiVersion: "5.1",
             method: "PATCH",
             routeTemplate: "{project}/_apis/testplan/Plans/{planId}",
             routeValues: {
@@ -332,7 +332,7 @@ export class TestPlanRestClient extends RestClientBase {
         };
 
         return this.beginRequest<TestPlan.SuiteEntry[]>({
-            apiVersion: "7.2-preview.1",
+            apiVersion: "5.1",
             routeTemplate: "{project}/_apis/testplan/SuiteEntry/{suiteId}",
             routeValues: {
                 project: project,
@@ -356,7 +356,7 @@ export class TestPlanRestClient extends RestClientBase {
         ): Promise<TestPlan.SuiteEntry[]> {
 
         return this.beginRequest<TestPlan.SuiteEntry[]>({
-            apiVersion: "7.2-preview.1",
+            apiVersion: "5.1",
             method: "PATCH",
             routeTemplate: "{project}/_apis/testplan/SuiteEntry/{suiteId}",
             routeValues: {
@@ -383,7 +383,7 @@ export class TestPlanRestClient extends RestClientBase {
         ): Promise<TestPlan.TestSuite[]> {
 
         return this.beginRequest<TestPlan.TestSuite[]>({
-            apiVersion: "7.2-preview.1",
+            apiVersion: "5.1",
             method: "POST",
             routeTemplate: "{project}/_apis/testplan/Plans/{planId}/Suites/{parentSuiteId}/bulk",
             routeValues: {
@@ -409,7 +409,7 @@ export class TestPlanRestClient extends RestClientBase {
         ): Promise<TestPlan.TestSuite> {
 
         return this.beginRequest<TestPlan.TestSuite>({
-            apiVersion: "7.2-preview.1",
+            apiVersion: "5.1",
             method: "POST",
             routeTemplate: "{project}/_apis/testplan/Plans/{planId}/Suites/{suiteId}",
             routeValues: {
@@ -434,7 +434,7 @@ export class TestPlanRestClient extends RestClientBase {
         ): Promise<void> {
 
         return this.beginRequest<void>({
-            apiVersion: "7.2-preview.1",
+            apiVersion: "5.1",
             method: "DELETE",
             routeTemplate: "{project}/_apis/testplan/Plans/{planId}/Suites/{suiteId}",
             routeValues: {
@@ -465,7 +465,7 @@ export class TestPlanRestClient extends RestClientBase {
         };
 
         return this.beginRequest<TestPlan.TestSuite>({
-            apiVersion: "7.2-preview.1",
+            apiVersion: "5.1",
             routeTemplate: "{project}/_apis/testplan/Plans/{planId}/Suites/{suiteId}",
             routeValues: {
                 project: project,
@@ -500,7 +500,7 @@ export class TestPlanRestClient extends RestClientBase {
         };
 
         return this.beginRequest<Response>({
-            apiVersion: "7.2-preview.1",
+            apiVersion: "5.1",
             routeTemplate: "{project}/_apis/testplan/Plans/{planId}/Suites/{suiteId}",
             routeValues: {
                 project: project,
@@ -531,7 +531,7 @@ export class TestPlanRestClient extends RestClientBase {
         ): Promise<TestPlan.TestSuite> {
 
         return this.beginRequest<TestPlan.TestSuite>({
-            apiVersion: "7.2-preview.1",
+            apiVersion: "5.1",
             method: "PATCH",
             routeTemplate: "{project}/_apis/testplan/Plans/{planId}/Suites/{suiteId}",
             routeValues: {
@@ -557,7 +557,7 @@ export class TestPlanRestClient extends RestClientBase {
         };
 
         return this.beginRequest<TestPlan.TestSuite[]>({
-            apiVersion: "7.2-preview.1",
+            apiVersion: "5.1",
             routeTemplate: "_apis/testplan/Suites",
             queryParams: queryValues
         });
@@ -579,7 +579,7 @@ export class TestPlanRestClient extends RestClientBase {
         ): Promise<TestPlan.TestCase[]> {
 
         return this.beginRequest<TestPlan.TestCase[]>({
-            apiVersion: "7.2-preview.3",
+            apiVersion: "5.1",
             method: "POST",
             routeTemplate: "{project}/_apis/testplan/Plans/{planId}/Suites/{suiteId}/TestCase/{testCaseId}",
             routeValues: {
@@ -616,7 +616,7 @@ export class TestPlanRestClient extends RestClientBase {
         };
 
         return this.beginRequest<TestPlan.TestCase[]>({
-            apiVersion: "7.2-preview.3",
+            apiVersion: "5.1",
             routeTemplate: "{project}/_apis/testplan/Plans/{planId}/Suites/{suiteId}/TestCase/{testCaseId}",
             routeValues: {
                 project: project,
@@ -669,7 +669,7 @@ export class TestPlanRestClient extends RestClientBase {
         };
 
         return this.beginRequest<Response>({
-            apiVersion: "7.2-preview.3",
+            apiVersion: "5.1",
             routeTemplate: "{project}/_apis/testplan/Plans/{planId}/Suites/{suiteId}/TestCase/{testCaseId}",
             routeValues: {
                 project: project,
@@ -705,7 +705,7 @@ export class TestPlanRestClient extends RestClientBase {
         };
 
         return this.beginRequest<void>({
-            apiVersion: "7.2-preview.3",
+            apiVersion: "5.1",
             method: "DELETE",
             routeTemplate: "{project}/_apis/testplan/Plans/{planId}/Suites/{suiteId}/TestCase/{testCaseId}",
             routeValues: {
@@ -737,7 +737,7 @@ export class TestPlanRestClient extends RestClientBase {
         };
 
         return this.beginRequest<void>({
-            apiVersion: "7.2-preview.3",
+            apiVersion: "5.1",
             method: "DELETE",
             routeTemplate: "{project}/_apis/testplan/Plans/{planId}/Suites/{suiteId}/TestCase/{testCaseId}",
             routeValues: {
@@ -765,7 +765,7 @@ export class TestPlanRestClient extends RestClientBase {
         ): Promise<TestPlan.TestCase[]> {
 
         return this.beginRequest<TestPlan.TestCase[]>({
-            apiVersion: "7.2-preview.3",
+            apiVersion: "5.1",
             method: "PATCH",
             routeTemplate: "{project}/_apis/testplan/Plans/{planId}/Suites/{suiteId}/TestCase/{testCaseId}",
             routeValues: {
@@ -787,7 +787,7 @@ export class TestPlanRestClient extends RestClientBase {
         ): Promise<TestPlan.CloneTestCaseOperationInformation> {
 
         return this.beginRequest<TestPlan.CloneTestCaseOperationInformation>({
-            apiVersion: "7.2-preview.2",
+            apiVersion: "5.1",
             method: "POST",
             routeTemplate: "{project}/_apis/testplan/TestCases/CloneTestCaseOperation/{cloneOperationId}",
             routeValues: {
@@ -809,7 +809,7 @@ export class TestPlanRestClient extends RestClientBase {
         ): Promise<TestPlan.CloneTestCaseOperationInformation> {
 
         return this.beginRequest<TestPlan.CloneTestCaseOperationInformation>({
-            apiVersion: "7.2-preview.2",
+            apiVersion: "5.1",
             routeTemplate: "{project}/_apis/testplan/TestCases/CloneTestCaseOperation/{cloneOperationId}",
             routeValues: {
                 project: project,
@@ -830,7 +830,7 @@ export class TestPlanRestClient extends RestClientBase {
         ): Promise<ArrayBuffer> {
 
         return this.beginRequest<ArrayBuffer>({
-            apiVersion: "7.2-preview.1",
+            apiVersion: "5.1",
             method: "POST",
             httpResponseType: "application/octet-stream",
             routeTemplate: "{project}/_apis/testplan/TestCases/TestCaseFile",
@@ -853,7 +853,7 @@ export class TestPlanRestClient extends RestClientBase {
         ): Promise<void> {
 
         return this.beginRequest<void>({
-            apiVersion: "7.2-preview.1",
+            apiVersion: "5.1",
             method: "DELETE",
             routeTemplate: "{project}/_apis/testplan/TestCases/{testCaseId}",
             routeValues: {
@@ -877,7 +877,7 @@ export class TestPlanRestClient extends RestClientBase {
         ): Promise<void> {
 
         return this.beginRequest<void>({
-            apiVersion: "7.2-preview.1",
+            apiVersion: "5.1",
             method: "PATCH",
             routeTemplate: "{project}/_apis/testplan/recycleBin/TestPlan/{planId}",
             routeValues: {
@@ -906,7 +906,7 @@ export class TestPlanRestClient extends RestClientBase {
         };
 
         return this.beginRequest<TestPlan.CloneTestPlanOperationInformation>({
-            apiVersion: "7.2-preview.2",
+            apiVersion: "5.1",
             method: "POST",
             routeTemplate: "{project}/_apis/testplan/Plans/CloneOperation/{cloneOperationId}",
             routeValues: {
@@ -929,7 +929,7 @@ export class TestPlanRestClient extends RestClientBase {
         ): Promise<TestPlan.CloneTestPlanOperationInformation> {
 
         return this.beginRequest<TestPlan.CloneTestPlanOperationInformation>({
-            apiVersion: "7.2-preview.2",
+            apiVersion: "5.1",
             routeTemplate: "{project}/_apis/testplan/Plans/CloneOperation/{cloneOperationId}",
             routeValues: {
                 project: project,
@@ -964,7 +964,7 @@ export class TestPlanRestClient extends RestClientBase {
         };
 
         return this.beginRequest<TestPlan.TestPoint[]>({
-            apiVersion: "7.2-preview.2",
+            apiVersion: "5.1",
             routeTemplate: "{project}/_apis/testplan/Plans/{planId}/Suites/{suiteId}/TestPoint/{pointIds}",
             routeValues: {
                 project: project,
@@ -1010,7 +1010,7 @@ export class TestPlanRestClient extends RestClientBase {
         };
 
         return this.beginRequest<Response>({
-            apiVersion: "7.2-preview.2",
+            apiVersion: "5.1",
             routeTemplate: "{project}/_apis/testplan/Plans/{planId}/Suites/{suiteId}/TestPoint/{pointIds}",
             routeValues: {
                 project: project,
@@ -1051,7 +1051,7 @@ export class TestPlanRestClient extends RestClientBase {
         };
 
         return this.beginRequest<TestPlan.TestPoint[]>({
-            apiVersion: "7.2-preview.2",
+            apiVersion: "5.1",
             method: "PATCH",
             routeTemplate: "{project}/_apis/testplan/Plans/{planId}/Suites/{suiteId}/TestPoint/{pointIds}",
             routeValues: {
@@ -1078,7 +1078,7 @@ export class TestPlanRestClient extends RestClientBase {
         ): Promise<void> {
 
         return this.beginRequest<void>({
-            apiVersion: "7.2-preview.1",
+            apiVersion: "5.1",
             method: "PATCH",
             routeTemplate: "{project}/_apis/testplan/recycleBin/TestSuite/{suiteId}",
             routeValues: {
@@ -1107,7 +1107,7 @@ export class TestPlanRestClient extends RestClientBase {
         };
 
         return this.beginRequest<TestPlan.CloneTestSuiteOperationInformation>({
-            apiVersion: "7.2-preview.2",
+            apiVersion: "5.1",
             method: "POST",
             routeTemplate: "{project}/_apis/testplan/Suites/CloneOperation/{cloneOperationId}",
             routeValues: {
@@ -1130,7 +1130,7 @@ export class TestPlanRestClient extends RestClientBase {
         ): Promise<TestPlan.CloneTestSuiteOperationInformation> {
 
         return this.beginRequest<TestPlan.CloneTestSuiteOperationInformation>({
-            apiVersion: "7.2-preview.2",
+            apiVersion: "5.1",
             routeTemplate: "{project}/_apis/testplan/Suites/CloneOperation/{cloneOperationId}",
             routeValues: {
                 project: project,
@@ -1151,7 +1151,7 @@ export class TestPlanRestClient extends RestClientBase {
         ): Promise<TestPlan.TestVariable> {
 
         return this.beginRequest<TestPlan.TestVariable>({
-            apiVersion: "7.2-preview.1",
+            apiVersion: "5.1",
             method: "POST",
             routeTemplate: "{project}/_apis/testplan/Variables/{testVariableId}",
             routeValues: {
@@ -1173,7 +1173,7 @@ export class TestPlanRestClient extends RestClientBase {
         ): Promise<void> {
 
         return this.beginRequest<void>({
-            apiVersion: "7.2-preview.1",
+            apiVersion: "5.1",
             method: "DELETE",
             routeTemplate: "{project}/_apis/testplan/Variables/{testVariableId}",
             routeValues: {
@@ -1195,7 +1195,7 @@ export class TestPlanRestClient extends RestClientBase {
         ): Promise<TestPlan.TestVariable> {
 
         return this.beginRequest<TestPlan.TestVariable>({
-            apiVersion: "7.2-preview.1",
+            apiVersion: "5.1",
             routeTemplate: "{project}/_apis/testplan/Variables/{testVariableId}",
             routeValues: {
                 project: project,
@@ -1220,7 +1220,7 @@ export class TestPlanRestClient extends RestClientBase {
         };
 
         return this.beginRequest<Response>({
-            apiVersion: "7.2-preview.1",
+            apiVersion: "5.1",
             routeTemplate: "{project}/_apis/testplan/Variables/{testVariableId}",
             routeValues: {
                 project: project
@@ -1248,7 +1248,7 @@ export class TestPlanRestClient extends RestClientBase {
         ): Promise<TestPlan.TestVariable> {
 
         return this.beginRequest<TestPlan.TestVariable>({
-            apiVersion: "7.2-preview.1",
+            apiVersion: "5.1",
             method: "PATCH",
             routeTemplate: "{project}/_apis/testplan/Variables/{testVariableId}",
             routeValues: {

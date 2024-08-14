@@ -39,7 +39,7 @@ export class AlertRestClient extends RestClientBase {
         };
 
         return this.beginRequest<Alert.Alert>({
-            apiVersion: "7.2-preview.1",
+            apiVersion: "5.1",
             routeTemplate: "{project}/_apis/Alert/repositories/{repository}/Alerts/{alertId}",
             routeValues: {
                 project: project,
@@ -77,7 +77,7 @@ export class AlertRestClient extends RestClientBase {
         };
 
         return this.beginRequest<Response>({
-            apiVersion: "7.2-preview.1",
+            apiVersion: "5.1",
             routeTemplate: "{project}/_apis/Alert/repositories/{repository}/Alerts/{alertId}",
             routeValues: {
                 project: project,
@@ -115,7 +115,7 @@ export class AlertRestClient extends RestClientBase {
         };
 
         return this.beginRequest<string>({
-            apiVersion: "7.2-preview.1",
+            apiVersion: "5.1",
             routeTemplate: "{project}/_apis/Alert/repositories/{repository}/Alerts/{alertId}",
             routeValues: {
                 project: project,
@@ -142,7 +142,7 @@ export class AlertRestClient extends RestClientBase {
         ): Promise<Alert.Alert> {
 
         return this.beginRequest<Alert.Alert>({
-            apiVersion: "7.2-preview.1",
+            apiVersion: "5.1",
             method: "PATCH",
             routeTemplate: "{project}/_apis/Alert/repositories/{repository}/Alerts/{alertId}",
             routeValues: {
@@ -174,7 +174,7 @@ export class AlertRestClient extends RestClientBase {
         };
 
         return this.beginRequest<Alert.AlertAnalysisInstance[]>({
-            apiVersion: "7.2-preview.1",
+            apiVersion: "5.1",
             routeTemplate: "{project}/_apis/Alert/repositories/{repository}/alerts/{alertId}/Instances",
             routeValues: {
                 project: project,
@@ -199,7 +199,7 @@ export class AlertRestClient extends RestClientBase {
         ): Promise<Alert.AlertMetadataChange[]> {
 
         return this.beginRequest<Alert.AlertMetadataChange[]>({
-            apiVersion: "7.2-preview.1",
+            apiVersion: "5.1",
             method: "PATCH",
             routeTemplate: "{project}/_apis/Alert/repositories/{repository}/alerts/Metadata",
             routeValues: {
@@ -226,7 +226,7 @@ export class AlertRestClient extends RestClientBase {
         ): Promise<number> {
 
         return this.beginRequest<number>({
-            apiVersion: "7.2-preview.1",
+            apiVersion: "5.1",
             method: "POST",
             routeTemplate: "{project}/_apis/Alert/repositories/{repository}/sarifs",
             routeValues: {
@@ -257,7 +257,7 @@ export class AlertRestClient extends RestClientBase {
         };
 
         return this.beginRequest<Alert.UxFilters>({
-            apiVersion: "7.2-preview.1",
+            apiVersion: "5.1",
             routeTemplate: "{project}/_apis/Alert/repositories/{repository}/filters",
             routeValues: {
                 project: project,
@@ -277,7 +277,7 @@ export class AlertRestClient extends RestClientBase {
         ): Promise<Alert.SarifUploadStatus> {
 
         return this.beginRequest<Alert.SarifUploadStatus>({
-            apiVersion: "7.2-preview.2",
+            apiVersion: "5.1",
             routeTemplate: "_apis/Alert/Sarifs/{sarifId}",
             routeValues: {
                 sarifId: sarifId

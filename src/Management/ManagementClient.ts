@@ -24,7 +24,7 @@ export class ManagementRestClient extends RestClientBase {
         ): Promise<void> {
 
         return this.beginRequest<void>({
-            apiVersion: "7.2-preview.1",
+            apiVersion: "5.1",
             method: "DELETE",
             routeTemplate: "{organizationId}/_apis/Management/Billing/{action}",
             routeValues: {
@@ -44,7 +44,7 @@ export class ManagementRestClient extends RestClientBase {
         ): Promise<void> {
 
         return this.beginRequest<void>({
-            apiVersion: "7.2-preview.1",
+            apiVersion: "5.1",
             method: "DELETE",
             routeTemplate: "{organizationId}/_apis/Management/Billing/{action}",
             routeValues: {
@@ -64,7 +64,7 @@ export class ManagementRestClient extends RestClientBase {
         ): Promise<Management.BillingInfo> {
 
         return this.beginRequest<Management.BillingInfo>({
-            apiVersion: "7.2-preview.1",
+            apiVersion: "5.1",
             routeTemplate: "{organizationId}/_apis/Management/Billing/{action}",
             routeValues: {
                 organizationId: organizationId,
@@ -85,7 +85,7 @@ export class ManagementRestClient extends RestClientBase {
         ): Promise<void> {
 
         return this.beginRequest<void>({
-            apiVersion: "7.2-preview.1",
+            apiVersion: "5.1",
             method: "POST",
             routeTemplate: "{organizationId}/_apis/Management/Billing/{action}",
             routeValues: {
@@ -106,7 +106,7 @@ export class ManagementRestClient extends RestClientBase {
         ): Promise<void> {
 
         return this.beginRequest<void>({
-            apiVersion: "7.2-preview.1",
+            apiVersion: "5.1",
             method: "POST",
             routeTemplate: "_apis/Management/MeterUsage/{action}",
             routeValues: {
@@ -130,7 +130,7 @@ export class ManagementRestClient extends RestClientBase {
         };
 
         return this.beginRequest<Management.BillableCommitterDetails[]>({
-            apiVersion: "7.2-preview.1",
+            apiVersion: "5.1",
             routeTemplate: "_apis/Management/MeterUsage/{action}",
             routeValues: {
                 action: "Details"
@@ -145,7 +145,7 @@ export class ManagementRestClient extends RestClientBase {
         ): Promise<Management.MeterUsage> {
 
         return this.beginRequest<Management.MeterUsage>({
-            apiVersion: "7.2-preview.1",
+            apiVersion: "5.1",
             routeTemplate: "_apis/Management/MeterUsage/{action}",
             routeValues: {
                 action: "Last"
@@ -167,7 +167,7 @@ export class ManagementRestClient extends RestClientBase {
         };
 
         return this.beginRequest<Management.MeterUsage>({
-            apiVersion: "7.2-preview.1",
+            apiVersion: "5.1",
             routeTemplate: "_apis/Management/MeterUsage/{action}",
             routeValues: {
                 action: "Default"
@@ -190,7 +190,7 @@ export class ManagementRestClient extends RestClientBase {
         };
 
         return this.beginRequest<Management.AdvSecEnablementSettings>({
-            apiVersion: "7.2-preview.1",
+            apiVersion: "5.1",
             routeTemplate: "_apis/Management/enablement",
             queryParams: queryValues
         });
@@ -206,7 +206,7 @@ export class ManagementRestClient extends RestClientBase {
         ): Promise<void> {
 
         return this.beginRequest<void>({
-            apiVersion: "7.2-preview.1",
+            apiVersion: "5.1",
             method: "PATCH",
             routeTemplate: "_apis/Management/enablement",
             body: savedAdvSecEnablementStatus
@@ -221,7 +221,7 @@ export class ManagementRestClient extends RestClientBase {
         ): Promise<string[]> {
 
         return this.beginRequest<string[]>({
-            apiVersion: "7.2-preview.1",
+            apiVersion: "5.1",
             routeTemplate: "_apis/Management/meterUsageEstimate"
         });
     }
@@ -242,7 +242,7 @@ export class ManagementRestClient extends RestClientBase {
         };
 
         return this.beginRequest<Management.AdvSecEnablementSettings>({
-            apiVersion: "7.2-preview.1",
+            apiVersion: "5.1",
             routeTemplate: "{project}/_apis/Management/enablement",
             routeValues: {
                 project: project
@@ -263,7 +263,7 @@ export class ManagementRestClient extends RestClientBase {
         ): Promise<void> {
 
         return this.beginRequest<void>({
-            apiVersion: "7.2-preview.1",
+            apiVersion: "5.1",
             method: "PATCH",
             routeTemplate: "{project}/_apis/Management/enablement",
             routeValues: {
@@ -283,7 +283,7 @@ export class ManagementRestClient extends RestClientBase {
         ): Promise<string[]> {
 
         return this.beginRequest<string[]>({
-            apiVersion: "7.2-preview.1",
+            apiVersion: "5.1",
             routeTemplate: "{project}/_apis/Management/meterUsageEstimate",
             routeValues: {
                 project: project
@@ -309,7 +309,7 @@ export class ManagementRestClient extends RestClientBase {
         };
 
         return this.beginRequest<Management.AdvSecEnablementStatus>({
-            apiVersion: "7.2-preview.1",
+            apiVersion: "5.1",
             routeTemplate: "{project}/_apis/Management/repositories/{repository}/enablement",
             routeValues: {
                 project: project,
@@ -333,7 +333,7 @@ export class ManagementRestClient extends RestClientBase {
         ): Promise<void> {
 
         return this.beginRequest<void>({
-            apiVersion: "7.2-preview.1",
+            apiVersion: "5.1",
             method: "PATCH",
             routeTemplate: "{project}/_apis/Management/repositories/{repository}/enablement",
             routeValues: {
@@ -356,7 +356,7 @@ export class ManagementRestClient extends RestClientBase {
         ): Promise<string[]> {
 
         return this.beginRequest<string[]>({
-            apiVersion: "7.2-preview.1",
+            apiVersion: "5.1",
             routeTemplate: "{project}/_apis/Management/repositories/{repository}/meterUsageEstimate",
             routeValues: {
                 project: project,
